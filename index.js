@@ -7,7 +7,7 @@ app.use(express.json());
 
 mongoose
   .connect(
-    "mongodb+srv://abdalazeezkhdeir:paTWK4onFKeurymt@my-cluster.er7ebsd.mongodb.net/?retryWrites=true&w=majority&appName=My-Cluster"
+    "mongodb+srv://<user>:<password>@my-cluster.er7ebsd.mongodb.net/?retryWrites=true&w=majority&appName=My-Cluster"
   )
   .then(() => console.log("✅ Connected to MongoDB"))
   .catch((err) => console.error("❌ Connection error:", err));
